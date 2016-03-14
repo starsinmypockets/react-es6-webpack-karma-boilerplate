@@ -9,8 +9,18 @@ describe('1+1', () => {
   });
 });
 
-describe('Test library', () => {
-  it('foo should foo-ize str', () => {
-    expect(Lib.foo('Hello')).toBe('Hello foo');
+describe('It should have a member', () => {
+  it('Shoukd have a member', () => {
+    expect(Lib.member).toBe('Member');
+  })
+});
+
+describe('The module should say hello', () => {
+  it('The mpodule should say hello', () => {
+    expect(Lib.method('Paul')).toBe('Hello Paul, how are you');
+  });
+
+  it('Privates should be an object', () => {
+    expect(typeof Lib.privates).toBe('object');
   });
 });

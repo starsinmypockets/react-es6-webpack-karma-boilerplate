@@ -7,6 +7,7 @@ module.exports = {
     './src/index'
   ],
   output: {
+    path: __dirname + '/src/App.js',
     library: 'Es2sql',
     libraryTarget: 'umd',
     filename: 'dist/bundle.js',
